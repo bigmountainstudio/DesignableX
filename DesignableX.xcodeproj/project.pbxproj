@@ -12,6 +12,7 @@
 		4D7E30091E18266700E75BB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E30071E18266700E75BB0 /* Main.storyboard */; };
 		4D7E300B1E18266700E75BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E300A1E18266700E75BB0 /* Assets.xcassets */; };
 		4D7E300E1E18266700E75BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E300C1E18266700E75BB0 /* LaunchScreen.storyboard */; };
+		4D7E30171E18336700E75BB0 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E30161E18336700E75BB0 /* UIViewX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4D7E300A1E18266700E75BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D7E300D1E18266700E75BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D7E300F1E18266700E75BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7E30161E18336700E75BB0 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		4D7E30021E18266700E75BB0 /* DesignableX */ = {
 			isa = PBXGroup;
 			children = (
+				4D7E30151E18332000E75BB0 /* DesignableX */,
 				4D7E30031E18266700E75BB0 /* AppDelegate.swift */,
 				4D7E30051E18266700E75BB0 /* ViewController.swift */,
 				4D7E30071E18266700E75BB0 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				4D7E300F1E18266700E75BB0 /* Info.plist */,
 			);
 			path = DesignableX;
+			sourceTree = "<group>";
+		};
+		4D7E30151E18332000E75BB0 /* DesignableX */ = {
+			isa = PBXGroup;
+			children = (
+				4D7E30161E18336700E75BB0 /* UIViewX.swift */,
+			);
+			name = DesignableX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				4D7E30061E18266700E75BB0 /* ViewController.swift in Sources */,
 				4D7E30041E18266700E75BB0 /* AppDelegate.swift in Sources */,
+				4D7E30171E18336700E75BB0 /* UIViewX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
