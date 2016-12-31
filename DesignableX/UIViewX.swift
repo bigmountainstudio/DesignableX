@@ -10,7 +10,31 @@ import UIKit
 
 @IBDesignable
 class UIViewX: UIView {
-
+    
+    // MARK: - Gradient
+    
+    @IBInspectable public var topColor: UIColor = UIColor.white {
+        didSet {
+            updateView()
+        }
+    }
+    @IBInspectable public var bottomColor: UIColor = UIColor.white {
+        didSet {
+            updateView()
+        }
+    }
+    
+    override public class var layerClass: AnyClass {
+        return CAGradientLayer.self
+    }
+    
+    func updateView() {
+        let layer = self.layer as! CAGradientLayer
+        layer.colors = [ topColor.cgColor, bottomColor.cgColor ]
+    }
+    
+    // MARK: - Border
+    
     @IBInspectable public var borderColor: UIColor = UIColor.clear {
         didSet {
             layer.borderColor = borderColor.cgColor
