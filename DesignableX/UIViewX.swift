@@ -24,8 +24,10 @@ class UIViewX: UIView {
         }
     }
     
-    override public class var layerClass: AnyClass {
-        return CAGradientLayer.self
+    override class var layerClass: AnyClass {
+        get {
+            return CAGradientLayer.self
+        }
     }
     
     func updateView() {
