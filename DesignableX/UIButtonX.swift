@@ -50,6 +50,16 @@ class UIButtonX: UIButton {
         self.clipsToBounds = true
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let alphaBefore = alpha
+        alpha = 0.4
+        
+        UIView.animate(withDuration: 0.35, animations: {
+            self.alpha = alphaBefore
+        })
+    }
+    
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             self.layer.cornerRadius = cornerRadius
