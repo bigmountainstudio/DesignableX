@@ -1,0 +1,16 @@
+
+*.timestamp
+
+*.pcm
+
+*.idx
+
+*.xcactivitylog
+
+*.db
+
+*.xcindexdb-shm
+
+*.xcindexdb
+
+*.strings-sym

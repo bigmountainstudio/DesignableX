@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DD36AF71E215718005EBAAC /* ViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD36AF61E215718005EBAAC /* ViewControllerX.swift */; };
 		E7DE08681E1DCA0700EE9102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DE08671E1DCA0700EE9102 /* AppDelegate.swift */; };
 		E7DE086A1E1DCA0700EE9102 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DE08691E1DCA0700EE9102 /* FirstViewController.swift */; };
 		E7DE086C1E1DCA0700EE9102 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DE086B1E1DCA0700EE9102 /* SecondViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DD36AF61E215718005EBAAC /* ViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerX.swift; sourceTree = "<group>"; };
 		E7DE08641E1DCA0700EE9102 /* DesignableXTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignableXTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DE08671E1DCA0700EE9102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7DE08691E1DCA0700EE9102 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		E7DE087B1E1DCA1600EE9102 /* DesignableX */ = {
 			isa = PBXGroup;
 			children = (
+				4DD36AF61E215718005EBAAC /* ViewControllerX.swift */,
 				E7DE087C1E1DCA1600EE9102 /* UIButtonX.swift */,
 				E7DE087D1E1DCA1600EE9102 /* UITextFieldX.swift */,
 				E7DE087E1E1DCA1600EE9102 /* UIViewX.swift */,
@@ -162,6 +165,7 @@
 				E7DE08681E1DCA0700EE9102 /* AppDelegate.swift in Sources */,
 				E7DE08801E1DCA1600EE9102 /* UITextFieldX.swift in Sources */,
 				E7DE086A1E1DCA0700EE9102 /* FirstViewController.swift in Sources */,
+				4DD36AF71E215718005EBAAC /* ViewControllerX.swift in Sources */,
 				E7DE08811E1DCA1600EE9102 /* UIViewX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +330,7 @@
 				E7DE087A1E1DCA0700EE9102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
