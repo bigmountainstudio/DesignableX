@@ -119,7 +119,7 @@
 				TargetAttributes = {
 					E7DE08631E1DCA0700EE9102 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 9DZ3L8V7AK;
+						DevelopmentTeam = L2T9XB5368;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -289,10 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9DZ3L8V7AK;
+				DEVELOPMENT_TEAM = L2T9XB5368;
 				INFOPLIST_FILE = DesignableXTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.moeykens.DesignableXTesting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moeykens.designableXtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,10 +303,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9DZ3L8V7AK;
+				DEVELOPMENT_TEAM = L2T9XB5368;
 				INFOPLIST_FILE = DesignableXTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.moeykens.DesignableXTesting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moeykens.designableXtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
