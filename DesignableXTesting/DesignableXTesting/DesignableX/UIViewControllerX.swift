@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ViewControllerX: UIViewController {
+class UIViewControllerX: UIViewController {
     
     @IBInspectable var LightStatusBar: Bool = false
     
