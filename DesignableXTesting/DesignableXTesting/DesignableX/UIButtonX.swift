@@ -32,6 +32,9 @@ class UIButtonX: UIButton {
         }
     }
     
+    @IBInspectable var popIn: Bool = false
+    @IBInspectable var popInDelay: Double = 0.4
+    
     override func draw(_ rect: CGRect) {
         self.clipsToBounds = true
         
@@ -44,6 +47,13 @@ class UIButtonX: UIButton {
             
             UIView.animate(withDuration: 0.3, delay: animateDelay, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .allowUserInteraction, animations: {
                 self.frame = originalFrame
+            }, completion: nil)
+        }
+        
+        if popIn {
+            transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            UIView.animate(withDuration: 0.8, delay: popInDelay, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .allowUserInteraction, animations: {
+                self.transform = CGAffineTransform.identity
             }, completion: nil)
         }
     }
