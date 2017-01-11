@@ -14,8 +14,8 @@ class UIButtonX: UIButton {
     enum FromDirection:Int {
         case Top = 0
         case Right = 1
-        case Left = 2
-        case Bottom = 3
+        case Bottom = 2
+        case Left = 3
     }
     
     var direction: FromDirection = .Left
