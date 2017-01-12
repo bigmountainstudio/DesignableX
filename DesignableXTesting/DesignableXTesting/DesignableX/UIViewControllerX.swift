@@ -11,11 +11,11 @@ import UIKit
 @IBDesignable
 class UIViewControllerX: UIViewController {
     
-    @IBInspectable var LightStatusBar: Bool = false
+    @IBInspectable var lightStatusBar: Bool = false
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         get {
-            if LightStatusBar {
+            if lightStatusBar {
                 return UIStatusBarStyle.lightContent
             } else {
                 return UIStatusBarStyle.default

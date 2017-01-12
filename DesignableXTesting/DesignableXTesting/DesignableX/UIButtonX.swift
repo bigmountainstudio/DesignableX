@@ -57,7 +57,7 @@ class UIButtonX: UIButton {
             }, completion: nil)
         }
     }
-
+    
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         alphaBefore = alpha
         

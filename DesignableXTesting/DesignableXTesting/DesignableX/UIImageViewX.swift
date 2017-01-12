@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 class UIImageViewX: UIImageView {
-
+    
     // MARK: - Properties
     
     @IBInspectable public var borderColor: UIColor = UIColor.clear {
@@ -30,9 +30,12 @@ class UIImageViewX: UIImageView {
             layer.cornerRadius = cornerRadius
         }
     }
-
-    @IBInspectable var pulseAfter: Double = 0.0
-
+    
+    @IBInspectable var pulseDelay: Double = 0.0
+    
+    @IBInspectable var popIn: Bool = false
+    @IBInspectable var popInDelay: Double = 0.4
+    
     // MARK: - FUNCTIONS
     
     override func draw(_ rect: CGRect) {
@@ -40,9 +43,16 @@ class UIImageViewX: UIImageView {
     }
     
     override func awakeFromNib() {
-        if pulseAfter > 0 {
-            UIView.animate(withDuration: 1, delay: pulseAfter, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [], animations: {
+        if pulseDelay > 0 {
+            UIView.animate(withDuration: 1, delay: pulseDelay, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [], animations: {
                 self.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+                self.transform = CGAffineTransform.identity
+            }, completion: nil)
+        }
+        
+        if popIn {
+            transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+            UIView.animate(withDuration: 0.8, delay: popInDelay, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .allowUserInteraction, animations: {
                 self.transform = CGAffineTransform.identity
             }, completion: nil)
         }

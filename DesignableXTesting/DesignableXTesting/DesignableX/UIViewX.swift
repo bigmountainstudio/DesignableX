@@ -13,12 +13,19 @@ class UIViewX: UIView {
     
     // MARK: - Gradient
     
-    @IBInspectable public var topColor: UIColor = UIColor.white {
+    @IBInspectable var firstColor: UIColor = UIColor.white {
         didSet {
             updateView()
         }
     }
-    @IBInspectable public var bottomColor: UIColor = UIColor.white {
+    
+    @IBInspectable var secondColor: UIColor = UIColor.white {
+        didSet {
+            updateView()
+        }
+    }
+    
+    @IBInspectable var horizontalGradient: Bool = false {
         didSet {
             updateView()
         }
@@ -32,7 +39,15 @@ class UIViewX: UIView {
     
     func updateView() {
         let layer = self.layer as! CAGradientLayer
-        layer.colors = [ topColor.cgColor, bottomColor.cgColor ]
+        layer.colors = [ firstColor.cgColor, secondColor.cgColor ]
+        
+        if (horizontalGradient) {
+            layer.startPoint = CGPoint(x: 0.0, y: 0.5)
+            layer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        } else {
+            layer.startPoint = CGPoint(x: 0, y: 0)
+            layer.endPoint = CGPoint(x: 0, y: 1)
+        }
     }
     
     // MARK: - Border
