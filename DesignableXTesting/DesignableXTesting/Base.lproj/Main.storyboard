@@ -234,7 +234,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showAnchorPoint" value="YES"/>
                                     <userDefinedRuntimeAttribute type="point" keyPath="anchorPoint">
-                                        <point key="value" x="0.25" y="0.75"/>
+                                        <point key="value" x="0.25" y="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>

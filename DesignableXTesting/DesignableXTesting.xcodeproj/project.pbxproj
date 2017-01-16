@@ -89,9 +89,9 @@
 				4DBA0BEE1E257EDF00FDAE53 /* UIImageViewX.swift */,
 				4D883D6A1E2B4FA6001940AC /* UISliderX.swift */,
 				E7DE087D1E1DCA1600EE9102 /* UITextFieldX.swift */,
+				4D883D7B1E2CD48E001940AC /* UIViewAnchorPoint.swift */,
 				4DD36AF61E215718005EBAAC /* UIViewControllerX.swift */,
 				E7DE087E1E1DCA1600EE9102 /* UIViewX.swift */,
-				4D883D7B1E2CD48E001940AC /* UIViewAnchorPoint.swift */,
 			);
 			path = DesignableX;
 			sourceTree = "<group>";

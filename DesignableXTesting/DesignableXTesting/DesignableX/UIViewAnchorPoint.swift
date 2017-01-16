@@ -30,8 +30,6 @@
                 
                 anchorPointlayer.position = CGPoint(x: anchor.x * size.width, y: anchor.y * size.height)
                 layer.addSublayer(anchorPointlayer)
-            } else {
-                layer.sublayers?.removeAll()
             }
         }
         
