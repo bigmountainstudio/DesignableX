@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D47D7071E3D18AE00D7C730 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D47D7061E3D18AE00D7C730 /* UILabelX.swift */; };
 		4D883D6B1E2B4FA6001940AC /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D6A1E2B4FA6001940AC /* UISliderX.swift */; };
 		4D883D7C1E2CD48E001940AC /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D7B1E2CD48E001940AC /* UIViewAnchorPoint.swift */; };
 		4D945E901E3BF0FA00954514 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D945E8F1E3BF0FA00954514 /* UIViewXRadialGradient.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D47D7061E3D18AE00D7C730 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		4D883D6A1E2B4FA6001940AC /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
 		4D883D7B1E2CD48E001940AC /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
 		4D945E8F1E3BF0FA00954514 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				4DD36AF61E215718005EBAAC /* UIViewControllerX.swift */,
 				E7DE087E1E1DCA1600EE9102 /* UIViewX.swift */,
 				4D945E8F1E3BF0FA00954514 /* UIViewXRadialGradient.swift */,
+				4D47D7061E3D18AE00D7C730 /* UILabelX.swift */,
 			);
 			path = DesignableX;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				4D883D7C1E2CD48E001940AC /* UIViewAnchorPoint.swift in Sources */,
 				E7DE087F1E1DCA1600EE9102 /* UIButtonX.swift in Sources */,
 				4DBA0BEF1E257EDF00FDAE53 /* UIImageViewX.swift in Sources */,
+				4D47D7071E3D18AE00D7C730 /* UILabelX.swift in Sources */,
 				E7DE086C1E1DCA0700EE9102 /* SecondViewController.swift in Sources */,
 				4D883D6B1E2B4FA6001940AC /* UISliderX.swift in Sources */,
 				E7DE08681E1DCA0700EE9102 /* AppDelegate.swift in Sources */,
