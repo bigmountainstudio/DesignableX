@@ -36,10 +36,60 @@ class UIImageViewX: UIImageView {
     @IBInspectable var popIn: Bool = false
     @IBInspectable var popInDelay: Double = 0.4
     
+    // MARK: - Shadow
+    
+    @IBInspectable public var shadowOpacity: CGFloat = 0 {
+        didSet {
+            //layer.shadowOpacity = Float(shadowOpacity)
+        }
+    }
+    
+    @IBInspectable public var shadowColor: UIColor = UIColor.clear {
+        didSet {
+            //layer.shadowColor = shadowColor.cgColor
+        }
+    }
+    
+    @IBInspectable public var shadowRadius: CGFloat = 0 {
+        didSet {
+            //layer.shadowRadius = shadowRadius
+        }
+    }
+    
+    @IBInspectable public var shadowOffsetY: CGFloat = 0 {
+        didSet {
+            //layer.shadowOffset.height = shadowOffsetY
+        }
+    }
+
     // MARK: - FUNCTIONS
+    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        layer.shadowColor = shadowColor.cgColor
+//        layer.shadowOpacity = Float(shadowOpacity)
+//        layer.shadowRadius = shadowRadius
+//        layer.masksToBounds = false
+//        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
+    }
+    
     
     override func draw(_ rect: CGRect) {
-        self.clipsToBounds = true
+        if clipsToBounds && shadowOpacity > 0 {
+            layer.masksToBounds = true
+            layer.cornerRadius = cornerRadius
+            
+            // Outer UIView to hold the Shadow
+            let shadow = UIView(frame: rect)
+            shadow.layer.cornerRadius = cornerRadius
+            shadow.layer.masksToBounds = false
+            shadow.layer.shadowOpacity = Float(shadowOpacity)
+            shadow.layer.shadowColor = shadowColor.cgColor
+            shadow.layer.shadowRadius = shadowRadius
+            shadow.layer.shadowOffset.height = shadowOffsetY
+            shadow.layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
+            
+            shadow.addSubview(self)
+        }
     }
     
     override func awakeFromNib() {

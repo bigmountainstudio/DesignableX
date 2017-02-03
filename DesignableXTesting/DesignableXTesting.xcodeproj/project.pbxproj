@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1CA9171E452A4B000FEDE2 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CA9161E452A4B000FEDE2 /* UIVisualEffectViewX.swift */; };
 		4D47D7071E3D18AE00D7C730 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D47D7061E3D18AE00D7C730 /* UILabelX.swift */; };
 		4D883D6B1E2B4FA6001940AC /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D6A1E2B4FA6001940AC /* UISliderX.swift */; };
 		4D883D7C1E2CD48E001940AC /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D7B1E2CD48E001940AC /* UIViewAnchorPoint.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D1CA9161E452A4B000FEDE2 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
 		4D47D7061E3D18AE00D7C730 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		4D883D6A1E2B4FA6001940AC /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
 		4D883D7B1E2CD48E001940AC /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				E7DE087E1E1DCA1600EE9102 /* UIViewX.swift */,
 				4D945E8F1E3BF0FA00954514 /* UIViewXRadialGradient.swift */,
 				4D47D7061E3D18AE00D7C730 /* UILabelX.swift */,
+				4D1CA9161E452A4B000FEDE2 /* UIVisualEffectViewX.swift */,
 			);
 			path = DesignableX;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1CA9171E452A4B000FEDE2 /* UIVisualEffectViewX.swift in Sources */,
 				4D883D7C1E2CD48E001940AC /* UIViewAnchorPoint.swift in Sources */,
 				E7DE087F1E1DCA1600EE9102 /* UIButtonX.swift in Sources */,
 				4DBA0BEF1E257EDF00FDAE53 /* UIImageViewX.swift in Sources */,

@@ -9,6 +9,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Blurs-->
+        <scene sceneID="DSy-QQ-Wrn">
+            <objects>
+                <viewController id="EYC-vK-ZgJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LuK-gq-whW"/>
+                        <viewControllerLayoutGuide type="bottom" id="MG3-WB-umd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hHX-93-iB2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="NqM-2b-t51">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yny-9I-qRI" customClass="UIVisualEffectViewX" customModule="DesignableXTesting" customModuleProvider="target">
+                                <rect key="frame" x="40" y="28" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="9Ne-Ol-kta">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NqM-2b-t51" firstAttribute="top" secondItem="hHX-93-iB2" secondAttribute="top" id="JKm-Mo-IvT"/>
+                            <constraint firstAttribute="trailing" secondItem="NqM-2b-t51" secondAttribute="trailing" id="JYt-Gy-JrY"/>
+                            <constraint firstAttribute="bottom" secondItem="NqM-2b-t51" secondAttribute="bottom" id="WG3-E2-KS9"/>
+                            <constraint firstItem="NqM-2b-t51" firstAttribute="leading" secondItem="hHX-93-iB2" secondAttribute="leading" id="cHH-kH-pvY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blurs" id="RJ9-Zg-WaA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctq-VR-iYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2865" y="-986"/>
+        </scene>
         <!--View & Button-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -187,6 +231,15 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="70"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
@@ -276,6 +329,7 @@
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="qzX-KE-6ZJ"/>
                         <segue destination="PZG-4T-gOH" kind="relationship" relationship="viewControllers" id="ko8-Fd-GkK"/>
                         <segue destination="gbr-qs-a8B" kind="relationship" relationship="viewControllers" id="NxD-qI-J4k"/>
+                        <segue destination="EYC-vK-ZgJ" kind="relationship" relationship="viewControllers" id="Nbd-3B-fIz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIX-Pi-Dev" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -352,6 +406,7 @@
         <image name="first" width="30" height="30"/>
         <image name="lock" width="20" height="20"/>
         <image name="second" width="30" height="30"/>
+        <image name="sky" width="500" height="700"/>
         <image name="user" width="20" height="20"/>
     </resources>
 </document>
