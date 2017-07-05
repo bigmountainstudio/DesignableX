@@ -77,7 +77,7 @@ class UIButtonX: UIButton {
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         alphaBefore = alpha
         
-        UIView.animate(withDuration: 0.2, animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, options: .allowUserInteraction, animations: {
             self.alpha = 0.4
         })
         
@@ -85,7 +85,7 @@ class UIButtonX: UIButton {
     }
     
     override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
-        UIView.animate(withDuration: 0.35, animations: {
+        UIView.animate(withDuration: 0.35, delay: 0, options: .allowUserInteraction, animations: {
             self.alpha = self.alphaBefore
         })
     }
