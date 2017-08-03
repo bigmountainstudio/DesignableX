@@ -93,13 +93,13 @@
 			children = (
 				E7DE087C1E1DCA1600EE9102 /* UIButtonX.swift */,
 				4DBA0BEE1E257EDF00FDAE53 /* UIImageViewX.swift */,
+				4D47D7061E3D18AE00D7C730 /* UILabelX.swift */,
 				4D883D6A1E2B4FA6001940AC /* UISliderX.swift */,
 				E7DE087D1E1DCA1600EE9102 /* UITextFieldX.swift */,
 				4D883D7B1E2CD48E001940AC /* UIViewAnchorPoint.swift */,
 				4DD36AF61E215718005EBAAC /* UIViewControllerX.swift */,
 				E7DE087E1E1DCA1600EE9102 /* UIViewX.swift */,
 				4D945E8F1E3BF0FA00954514 /* UIViewXRadialGradient.swift */,
-				4D47D7061E3D18AE00D7C730 /* UILabelX.swift */,
 				4D1CA9161E452A4B000FEDE2 /* UIVisualEffectViewX.swift */,
 			);
 			path = DesignableX;
