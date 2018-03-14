@@ -34,4 +34,30 @@ class UILabelX: UILabel {
             self.transform = CGAffineTransform(rotationAngle: rotationAngle * .pi / 180)
         }
     }
+    
+    // MARK: - Shadow Text Properties
+    
+    @IBInspectable public var shadowOpacity: CGFloat = 0 {
+        didSet {
+            layer.shadowOpacity = Float(shadowOpacity)
+        }
+    }
+    
+    @IBInspectable public var shadowColorLayer: UIColor = UIColor.clear {
+        didSet {
+            layer.shadowColor = shadowColorLayer.cgColor
+        }
+    }
+    
+    @IBInspectable public var shadowRadius: CGFloat = 0 {
+        didSet {
+            layer.shadowRadius = shadowRadius
+        }
+    }
+    
+    @IBInspectable public var shadowOffsetLayer: CGSize = CGSize(width: 0, height: 0) {
+        didSet {
+            layer.shadowOffset = shadowOffsetLayer
+        }
+    }
 }
