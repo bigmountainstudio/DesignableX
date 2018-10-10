@@ -70,7 +70,7 @@ class UIButtonX: UIButton {
             shadowView.clipsToBounds = false
             
             self.superview?.addSubview(shadowView)
-            self.superview?.bringSubview(toFront: self)
+            self.superview?.bringSubviewToFront(self)
         }
     }
     
