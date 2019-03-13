@@ -3,7 +3,6 @@
 //  003 - Onboarding Page
 //
 //  Created by Mark Moeykens on 1/5/17.
-//  Copyright © 2017 Mark Moeykens. All rights reserved.
 //
 
 import UIKit
